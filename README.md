@@ -8,9 +8,11 @@
 #### Stencil
 - To build:
     1. cd into build-components/stencil
-    2. run ``npm run build``
+    2. run ``npm install``
+    3. run ``npm run build``
     
 #### Angular
 - To build:
     1. cd into build-components/angular
-    2. run ``npm run build``
+    2. run ``npm install``
+    3. run ``npm run build``

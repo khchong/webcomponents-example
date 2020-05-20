@@ -1,0 +1,34 @@
+<html lang="en">
+    <head>
+        <style>
+            .user-card {
+                background-color: red !important;
+            }
+        </style>
+        <title>Example</title>
+    </head>
+
+    <body>
+        <user-card name="John Doe" avatar="https://randomuser.me/api/portraits/men/1.jpg">
+            <div slot="email">john@gmail.com</div>
+        </user-card>
+
+        <user-card-stencil name="Jane Doe" avatar="https://randomuser.me/api/portraits/women/1.jpg">
+            <div slot="email">jane@gmail.com</div>
+        </user-card-stencil>
+
+        <user-card-angular name="Bob Doe" avatar="https://randomuser.me/api/portraits/men/2.jpg">
+            <div slot="email">bob@gmail.com</div>
+        </user-card-angular>
+
+        <script src="build-components/native/user-card.js"></script>
+
+        <!-- stencil -->
+        <script type="module" src="build-components/stencil/dist/user-card/user-card.esm.js"></script>
+
+        <!-- angular -->
+        <script type="module" src="build-components/angular/elements/user-card-angular.js"></script>
+
+        <script src="app.js"></script>
+    </body>
+</html>

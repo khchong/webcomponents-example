@@ -1,0 +1,12 @@
+<div class="user-card">
+  <img [src]="avatar" alt=""/>
+  <div>
+    <h3>{{name}}</h3>
+    <p>Angular Web Component</p>
+    <div class="info" [hidden]="!showInfo">
+      <p><slot name="email"></slot></p>
+    </div>
+    <button id="toggle-info" (click)="toggleShowInfo()">{{this.showInfo ? 'Hide' : 'Show'}} Info</button>
+    <button id="delete-btn" (click)="deleteClick()">Delete Me!</button>
+  </div>
+</div>
